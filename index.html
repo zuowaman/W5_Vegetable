@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK5_Vegetables</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body 
+		{
+            font-family: 'Arial', sans-serif;
+            background-color: #EDF2C5;
+            margin: 0;
+            padding: 0;
+            width: 1260px;
+            height: 940px;
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+		
+        /* Header Section */
+        .header 
+		{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 53px;
+            position: relative;
+			padding-left: 142px;
+            padding-right: 142px;
+        }
+
+        .header-title 
+		{
+            font-size: 42px;
+            font-weight: bold;
+            width: 271px;
+            height: 42px;
+            color: #778A50;
+            
+        }
+
+        .header-right 
+		{
+            display: flex;
+            align-items: center;
+			
+        }
+
+        .header-right img 
+		{
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .divider 
+		{
+            width: 1px;
+            height: 25px;
+            background-color: #778A50;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .button 
+		{
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #778A50;
+            border: 1px solid #778A50;
+            padding: 3px 10px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+			text-decoration: none;
+        }
+		
+		.button:active 
+		{
+    		background-color: #A9C47F; 
+    		color: #FFFFFF; 
+		}
+		
+        .login_button 
+		{
+            width: 60px;
+            margin-right: 10px;
+			border-radius: 3px;
+        }
+
+        .join_button 
+		{
+            width: 50px;
+			border-radius: 3px;
+        }
+		
+		.container 
+		{
+			max-width: 1260px; 
+			margin: 0 auto; 
+			padding-left: 20px; 
+			padding-right: 20px;
+			
+		}
+
+        /* Navbar Section */
+        .navbar 
+		{
+            background-color: #778A60;
+            height: 44px;
+            width: 940px;
+            margin: 8px auto 20px;
+            display: flex;
+            align-items: center;
+            color: #EDF2C5;
+            font-family: Arial Black, sans-serif;
+            font-size: 16px;
+        }
+
+        .nav-item:hover 
+		{
+			font-size: 16px;
+			color: #F7FBDA;
+			background-color: #778A50;
+			text-decoration: underline;
+        }
+
+        .navbar a 
+		{
+            color: #EDF2C5;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        .navbar a:first-child 
+		{
+            margin-left: 30px;
+        }
+
+        .navbar .contact 
+		{
+            margin-right: 317px;
+        }
+
+        /* Main Image */
+        .main-image-container 
+		{
+            width: 940px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .main-image 
+		{
+            width: 100%;
+            height: 448px;
+        }
+
+        /* Vegetable and Contact Boxes */
+        .box-container 
+		{
+            display: flex;
+            justify-content: space-between;
+            width: 940px;
+            margin: 0 auto;
+            margin-bottom: 15px; 
+        }
+		
+        .contact-box 
+		{
+            width: 445px;
+            height: 45px;
+            background-color: #778A50;
+            display: flex;
+            align-items: center;
+            color: #EDF2C5;
+            font-family: Arial Black, sans-serif;
+            font-size: 16px;
+            padding-left: 30px;
+            border-radius: 3px;
+        }
+
+         /* Flex container for Vegetables Images and Contact Info */
+        .vegetable-contact-container 
+		{
+            display: flex;
+            justify-content: space-between;
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        /* Images Below Vegetables Box */
+        .vegetable-images 
+		{
+            display: flex;
+            justify-content: space-between;
+            width: 445px;
+            margin-left: 0px;
+        }
+
+        .vegetable-images img 
+		{
+            width: 140px;
+            height: 140px;
+            margin-right: 12px
+        }
+
+        .vegetable-image:last-child 
+		{
+            margin-right: 0;
+        }
+
+        /* Contact Info Box */
+        .contact-info-box 
+		{
+            width: 445px;
+            height: 140px;
+            background-color: #F7FBDA;
+            padding: 16px;
+            color: #7D7D7D;
+            font-family: 'Arial MT', sans-serif;
+            font-size: 12px;
+            line-height: 1.33;
+            margin-left: 50px; 
+        }
+
+        .divider-line 
+		{
+            width: 414px;
+            height: 1px;
+            background-color: #7D7D7D;
+            margin: 14px 0;
+        }
+
+        .contact-info-box .contact-details
+		{
+            font-family: 'Arial MT', sans-serif;
+            font-size: 12px;
+            line-height: 1.83;
+        }
+
+        /* Footer Section */
+        .footer 
+		{
+            background-color: #778A50;
+            height: 60px;
+            color: #EDF2C5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            font-family: 'Arial MT', sans-serif;
+            font-size: 12px;
+        }
+    .alt 
+		{
+			
+		}
+    </style>
+</head>
+<body class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-title">Vegetables</div>
+        <div class="header-right">
+            <img src="image/btn_facebook.png" alt="FB">
+            <img src="image/btn_instagram.png" alt="IG">
+            <div class="divider"></div>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=dhhugELJLHWU2Vdo" class="button login_button">LOGIN</a>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=dhhugELJLHWU2Vdo" class="button join_button">JOIN</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#about">About Us</a>
+        <a class="nav-item" href="#vegetables">Vegetables</a>
+        <a class="nav-item" href="#online">Online</a>
+        <a class="nav-item contact" href="#contact">Contact</a>
+    </div>
+
+    <!-- Main Image -->
+    <div class="main-image-container">
+        <img src="image/img_main_pumpkin.png" alt="Pumpkin" class="main-image">
+    </div>
+
+    <!-- Vegetable and Contact Boxes -->
+    <div class="box-container">
+        <div class="contact-box">
+            Vegetables
+        </div>
+        <div class="contact-box">
+            Contact
+        </div>
+    </div>
+
+     <!-- Vegetable Images and Contact Info in Same Line -->
+     <div class="vegetable-contact-container">
+        <!-- Vegetable Images Section -->
+        <div class="vegetable-images">
+            <img src="image/img_vegetables_pepper.png" alt="Pepper" class="alt">
+            <img src="image/img_vegetables_carrot.png" alt="Carrot">
+            <img src="image/img_vegetables_corn.png" alt="Corn">
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="contact-info-box">
+            For any questions or suggestions about Vegetables, Vegetables Club or your online order, you can contact Vegetables Customer Service by phone, email, or post and we’ll be happy to help.
+            <div class="divider-line"></div>
+            <div class="contact-details">
+                E-mail: Vegetables@aaabbccc.com<br>
+                Phone: +886-123-456-789
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Copyrights 2017 Vegetables cise / Design by Vegetables
+    </div>
+</body>
+</html>
