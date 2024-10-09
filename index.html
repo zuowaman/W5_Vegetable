@@ -16,7 +16,8 @@
             height: 940px;
             padding-left: 160px;
             padding-right: 160px;
-        }
+        	margin: 0%;
+		}
 		
         /* Header Section */
         .header 
@@ -30,7 +31,7 @@
             padding-right: 142px;
         }
 
-        .header-title 
+        .header_title 
 		{
             font-size: 42px;
             font-weight: bold;
@@ -40,14 +41,14 @@
             
         }
 
-        .header-right 
+        .header_right 
 		{
             display: flex;
             align-items: center;
 			
         }
 
-        .header-right img 
+        .header_right img 
 		{
             width: 25px;
             height: 25px;
@@ -106,7 +107,6 @@
 			
 		}
 
-        /* Navbar Section */
         .navbar 
 		{
             background-color: #778A60;
@@ -120,7 +120,7 @@
             font-size: 16px;
         }
 
-        .nav-item:hover 
+        .nav_option:hover 
 		{
 			font-size: 16px;
 			color: #F7FBDA;
@@ -145,8 +145,7 @@
             margin-right: 317px;
         }
 
-        /* Main Image */
-        .main-image-container 
+        .main_img 
 		{
             width: 940px;
             margin: 0 auto;
@@ -159,8 +158,7 @@
             height: 448px;
         }
 
-        /* Vegetable and Contact Boxes */
-        .box-container 
+        .Contact_Boxes 
 		{
             display: flex;
             justify-content: space-between;
@@ -169,7 +167,7 @@
             margin-bottom: 15px; 
         }
 		
-        .contact-box 
+        .vegetabl_box 
 		{
             width: 445px;
             height: 45px;
@@ -183,8 +181,7 @@
             border-radius: 3px;
         }
 
-         /* Flex container for Vegetables Images and Contact Info */
-        .vegetable-contact-container 
+        .vegetabl_contact 
 		{
             display: flex;
             justify-content: space-between;
@@ -192,8 +189,7 @@
             margin: 0 auto;
         }
 
-        /* Images Below Vegetables Box */
-        .vegetable-images 
+        .vegetable_imgs 
 		{
             display: flex;
             justify-content: space-between;
@@ -201,20 +197,19 @@
             margin-left: 0px;
         }
 
-        .vegetable-images img 
+        .vegetable_imgs img 
 		{
             width: 140px;
             height: 140px;
             margin-right: 12px
         }
 
-        .vegetable-image:last-child 
+        .vegetable_img:last-child 
 		{
             margin-right: 0;
         }
 
-        /* Contact Info Box */
-        .contact-info-box 
+        .contact_box 
 		{
             width: 445px;
             height: 140px;
@@ -227,22 +222,21 @@
             margin-left: 50px; 
         }
 
-        .divider-line 
+        .line 
 		{
             width: 414px;
             height: 1px;
             background-color: #7D7D7D;
-            margin: 14px 0;
+            margin: 15px 0;
         }
 
-        .contact-info-box .contact-details
+        .contact_text
 		{
             font-family: 'Arial MT', sans-serif;
             font-size: 12px;
             line-height: 1.83;
         }
 
-        /* Footer Section */
         .footer 
 		{
             background-color: #778A50;
@@ -260,10 +254,9 @@
 </head>
 <body class="container">
 
-    <!-- Header -->
     <div class="header">
-        <div class="header-title">Vegetables</div>
-        <div class="header-right">
+        <div class="header_title">Vegetables</div>
+        <div class="header_right">
             <img src="image/btn_facebook.png" alt="FB">
             <img src="image/btn_instagram.png" alt="IG">
             <div class="divider"></div>
@@ -272,51 +265,44 @@
         </div>
     </div>
 
-    <!-- Navigation Bar -->
     <div class="navbar">
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#about">About Us</a>
-        <a class="nav-item" href="#vegetables">Vegetables</a>
-        <a class="nav-item" href="#online">Online</a>
-        <a class="nav-item contact" href="#contact">Contact</a>
+        <a class="nav_option" href="#home">Home</a>
+        <a class="nav_option" href="#about">About Us</a>
+        <a class="nav_option" href="#vegetables">Vegetables</a>
+        <a class="nav_option" href="#online">Online</a>
+        <a class="nav_option contact" href="#contact">Contact</a>
     </div>
 
-    <!-- Main Image -->
-    <div class="main-image-container">
+    <div class="main_img">
         <img src="image/img_main_pumpkin.png" alt="Pumpkin" class="main-image">
     </div>
 
-    <!-- Vegetable and Contact Boxes -->
-    <div class="box-container">
-        <div class="contact-box">
+    <div class="Contact_Boxes">
+        <div class="vegetabl_box">
             Vegetables
         </div>
-        <div class="contact-box">
+        <div class="vegetabl_box">
             Contact
         </div>
     </div>
 
-     <!-- Vegetable Images and Contact Info in Same Line -->
-     <div class="vegetable-contact-container">
-        <!-- Vegetable Images Section -->
-        <div class="vegetable-images">
+     <div class="vegetabl_contact">
+        <div class="vegetable_imgs">
             <img src="image/img_vegetables_pepper.png" alt="Pepper" class="alt">
             <img src="image/img_vegetables_carrot.png" alt="Carrot">
             <img src="image/img_vegetables_corn.png" alt="Corn">
         </div>
 
-        <!-- Contact Info Section -->
-        <div class="contact-info-box">
+        <div class="contact_box">
             For any questions or suggestions about Vegetables, Vegetables Club or your online order, you can contact Vegetables Customer Service by phone, email, or post and we’ll be happy to help.
-            <div class="divider-line"></div>
-            <div class="contact-details">
+            <div class="line"></div>
+            <div class="contact_text">
                 E-mail: Vegetables@aaabbccc.com<br>
                 Phone: +886-123-456-789
-            </div>
+         	</div>
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         Copyrights 2017 Vegetables cise / Design by Vegetables
     </div>
